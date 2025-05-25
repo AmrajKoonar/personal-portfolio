@@ -6,8 +6,8 @@ const person = {
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "BSc Computer Science Student at Simon Fraser University",
-  avatar: "/images/avatar.jpg",
+  role: "BSc Computer Science Student at SFU",
+  avatar: "/images/pfp/pfp_amraj(2).jpg",
   email: "ask36@sfu.ca",
   location: "America/Vancouver", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
   languages: ["English"], // optional: Leave the array empty if you don't want to display languages
@@ -35,7 +35,7 @@ const social = [
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/in/amrajkoonar/",
+    link: "https://www.linkedin.com/in/amraj-koonar/",
   },
   {
     name: "X",
@@ -62,9 +62,10 @@ const home = {
     href: "/work/building-once-ui-a-customizable-design-system",
   },
   subline: (
-    <>
-      I'm Amraj, a design engineer at <Logo icon={false} style={{ display: "inline-flex", top: "0.25em", marginLeft: "-0.25em" }}/>, where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+    <> 
+       A Computer Science Student at Simon Fraser University. Passionate about web, cloud, and software development.
+        Always eager to learn, build, and grow!
+
     </>
   ),
 };
@@ -90,15 +91,21 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        I am a third-year Computer Science student at Simon Fraser University passionate about web development, software development, front-end design, and full-stack applications. 
+        I specialize in React, JavaScript, and Python, with experience in technologies such as Git, GitHub, and Visual Studio Code. 
+        I enjoy building interactive and scalable web solutions.
+          <p>
+
+          </p>
+        Beyond technical skills, I thrive in team-oriented environments and enjoy problem-solving, mentoring, and collaborating on innovative ideas. 
+        I seek opportunities to apply my knowledge in internships, software development roles, or open-source contributions. 
+        I love exploring new technologies, optimizing code, and contributing to the tech community!
       </>
     ),
   },
   work: {
     display: true, // set to false to hide this section
-    title: "Work Experience",
+    title: "Experience",
     experiences: [
       {
         company: "FLY",
