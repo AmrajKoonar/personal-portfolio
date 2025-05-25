@@ -4,10 +4,12 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+
 env:
   VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
   VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
   VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -21,14 +23,10 @@ jobs:
           node-version: '20'
 
       - name: Install dependencies
-        run: |
-          cd website-code
-          npm ci
+        run: npm ci
 
       - name: Build
-        run: |
-          cd website-code
-          npm run build
+        run: npm run build
 
       - name: Install Vercel CLI
         run: npm install -g vercel
