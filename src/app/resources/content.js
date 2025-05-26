@@ -108,41 +108,51 @@ const about = {
     title: "Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "SFU Computer Science Peer Tutor",
+        timeframe: "Dec. 2024 - Present",
+        role: "Simon Fraser University",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Improved communication by helping students grasp recursion, dynamic programming, and other complex topics.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Guided students in debugging and explained fundamental concepts in Python, Java, and C++.
           </>,
         ],
         images: [
           // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
+          // {
+          //   src: "/images/projects/project-01/cover-01.jpg",
+          //   alt: "Once UI Project",
+          //   width: 16,
+          //   height: 9,
+          // },
         ],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "SFU Calculus I & II Peer Tutor",
+        timeframe: "Sept. 2023 - Present",
+        role: "Simon Fraser University",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            Strengthened problem-solving by simplifying advanced calculus for better understanding.
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Demonstrated critical thinking and adaptability to assess student needs and suggest personalized strategies.
+          </>,
+        ],
+        images: [],
+      },
+      {
+        company: "Courtesy Clerk",
+        timeframe: "July 2022 - Nov. 2023",
+        role: "Real Canadian Superstore",
+        achievements: [
+          <>
+            Managed multiple tasks efficiently in a fast-paced environment, showcasing communication and adaptability.
+          </>,
+          <>
+             Strengthened problem-solving, critical thinking and teamwork by helping customers and streamlining daily tasks.
           </>,
         ],
         images: [],
@@ -151,16 +161,16 @@ const about = {
   },
   studies: {
     display: true, // set to false to hide this section
-    title: "Studies",
+    title: "Education",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "Simon Fraser University",
+        description: <>Bachelor of Science in Computing Science.</>,
       },
-      {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
-      },
+      // {
+      //   // name: "Build the Future",
+      //   // description: <>Studied online marketing and personal branding.</>,
+      // },
     ],
   },
   technical: {
