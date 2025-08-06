@@ -17,6 +17,11 @@ export async function generateMetadata() {
     baseURL: baseURL,
     path: home.path,
     image: home.image,
+    icons: {
+      icon: '/images/favicon.png',
+      shortcut: '/images/favicon.png',
+      apple: '/images/favicon.png',
+    },
   });
 }
 

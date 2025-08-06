@@ -12,6 +12,11 @@ export interface MetaProps {
     name: string;
     url?: string;
   };
+  icons?: {
+    icon?: string;
+    shortcut?: string;
+    apple?: string;
+  };
 }
 
 export function generateMetadata({
@@ -23,6 +28,7 @@ export function generateMetadata({
   image,
   publishedTime,
   author,
+  icons,
 }: MetaProps): NextMetadata {
   const normalizedBaseURL = baseURL.endsWith("/") ? baseURL.slice(0, -1) : baseURL;
   const normalizedPath = path.startsWith("/") ? path : `/${path}`;
@@ -40,6 +46,7 @@ export function generateMetadata({
   return {
     title,
     description,
+    icons,
     openGraph: {
       title,
       description,
