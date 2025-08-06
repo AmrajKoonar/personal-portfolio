@@ -15,7 +15,7 @@ const person = {
 
 const newsletter = {
   display: false, // Disabled for academic portfolio
-  title: <>Subscribe to {person.firstName}'s Academic Updates</>,
+  title: <>Subscribe to {person.firstName}s Academic Updates</>,
   description: (
     <>
       I occasionally share updates about my academic projects, research, and learning journey.
@@ -52,9 +52,9 @@ const home = {
   path: "/",
   image: "/images/og/home.jpg",
   label: "Home",
-  title: `${person.name}'s Portfolio`,
+  title: `${person.name}s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Hi, I'm Amraj Koonar.</>,
+  headline: <>Hi, Im Amraj Koonar.</>,
   featured: {
     display: true,
     title: <>Recent project: <strong className="ml-4">DeepPhishing</strong></>,
@@ -112,7 +112,7 @@ const about = {
         role: "SFU Computing Science Student Society",
         achievements: [
           <>
-            Collaborated with the W3 Committee to define the website's architecture, user flow, and overall design strategy.
+            Collaborated with the W3 Committee to define the websites architecture, user flow, and overall design strategy.
           </>,
           <>
             Designed and developed the new homepage for the CSSS website, enhancing user experience for 2,000+ students.

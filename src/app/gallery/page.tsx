@@ -34,7 +34,7 @@ export default function Contact() {
           Get In Touch
         </Heading>
         <Text variant="body-default-l" horizontal="center" onBackground="neutral-weak">
-          I'm always open to new opportunities and collaborations. Feel free to reach out!
+          Im always open to new opportunities and collaborations. Feel free to reach out!
         </Text>
         
         <Column gap="l" fillWidth maxWidth="s">
