@@ -29,14 +29,20 @@ export default function Contact() {
           image: `${baseURL}${person.avatar}`,
         }}
       />
+
       <Column gap="xl" horizontal="center" paddingY="xl">
-        <Heading variant="display-strong-s" horizontal="center">
+        <Heading variant="display-strong-s" className="text-center">
           Get In Touch
         </Heading>
-        <Text variant="body-default-l" horizontal="center" onBackground="neutral-weak">
-          Im always open to new opportunities and collaborations. Feel free to reach out!
+
+        <Text
+          variant="body-default-l"
+          className="text-center"
+          onBackground="neutral-weak"
+        >
+          I’m always open to new opportunities and collaborations. Feel free to reach out!
         </Text>
-        
+
         <Column gap="l" fillWidth maxWidth="s">
           <Button
             href={gallery.contact.linkedin}
@@ -47,7 +53,7 @@ export default function Contact() {
           >
             LinkedIn
           </Button>
-          
+
           <Button
             href={`mailto:${gallery.contact.email}`}
             variant="secondary"
@@ -57,7 +63,7 @@ export default function Contact() {
           >
             Email
           </Button>
-          
+
           <Button
             href={gallery.contact.github}
             variant="tertiary"
@@ -67,7 +73,7 @@ export default function Contact() {
           >
             GitHub
           </Button>
-          
+
           {gallery.contact.resume && (
             <Button
               href={gallery.contact.resume}
@@ -80,8 +86,12 @@ export default function Contact() {
             </Button>
           )}
         </Column>
-        
-        <Text variant="body-default-s" horizontal="center" onBackground="neutral-weak">
+
+        <Text
+          variant="body-default-s"
+          className="text-center"
+          onBackground="neutral-weak"
+        >
           Based in Vancouver, BC
         </Text>
       </Column>
