@@ -6,7 +6,7 @@ const person = {
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "BSc Computer Science Student at SFU",
+  role: "BSc Computing Science Student at SFU",
   avatar: "/images/pfp/pfp_amraj(2).jpg",
   email: "ask36@sfu.ca",
   location: "America/Vancouver", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
@@ -107,6 +107,31 @@ const about = {
     title: "Experience",
     experiences: [
       {
+        company: "Web Developer",
+        timeframe: "July. 2025 - Present",
+        role: "SFU Computing Science Student Society",
+        achievements: [
+          <>
+            Collaborated with the W3 Committee to define the website's architecture, user flow, and overall design strategy.
+          </>,
+          <>
+            Designed and developed the new homepage for the CSSS website, enhancing user experience for 2,000+ students.
+          </>,
+          <>
+            Maintained and updated the CSSS Discord bot, automating tasks and improving communication for 4,000+ users.
+          </>,
+        ],
+        images: [
+          // optional: leave the array empty if you don't want to display images
+          // {
+          //   src: "/images/projects/project-01/cover-01.jpg",
+          //   alt: "Once UI Project",
+          //   width: 16,
+          //   height: 9,
+          // },
+        ],
+      },
+      {
         company: "SFU Computer Science Peer Tutor",
         timeframe: "Dec. 2024 - Present",
         role: "Simon Fraser University",
@@ -164,7 +189,12 @@ const about = {
     institutions: [
       {
         name: "Simon Fraser University",
-        description: <>Bachelor of Science in Computing Science.</>,
+        description: (
+          <>
+            Bachelor of Science in Computing Science.<br />
+            Recipient of the SFU CS Undergraduate Student Society Award valued at $3200.
+          </>
+        ),
       },
       // {
       //   // name: "Build the Future",
@@ -203,8 +233,8 @@ const about = {
 
 const blog = {
   path: "/blog",
-  label: "Relevant Academic Work",
-  title: "Relevant Academic Work",
+  label: "Coursework",
+  title: "Coursework",
   description: `Academic coursework and projects by ${person.name}`,
   // Create new blog posts by adding a new .mdx file to app/blog/posts
   // All posts will be listed on the /blog route
@@ -229,7 +259,7 @@ const gallery = {
     email: person.email,
     linkedin: "https://www.linkedin.com/in/amraj-koonar/",
     github: "https://github.com/AmrajKoonar",
-    resume: "", // Placeholder for resume link
+    resume: "/resume/Amraj_Koonar_Resume.pdf/", // Placeholder for resume link
   },
 };
 
