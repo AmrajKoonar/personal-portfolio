@@ -261,6 +261,7 @@ const gallery = {
     github: "https://github.com/AmrajKoonar",
     resume: "/resume/Amraj_Koonar_Resume.pdf/", // Placeholder for resume link
   },
+  images: [],
 };
 
 export { person, social, newsletter, home, about, blog, work, gallery };
