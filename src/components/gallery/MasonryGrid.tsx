@@ -17,7 +17,7 @@ export default function MasonryGrid() {
       className={styles.masonryGrid}
       columnClassName={styles.masonryGridColumn}
     >
-      {gallery.images.map((image, index) => (
+      {/* {gallery.images.map((image, index) => (
         <SmartImage
           priority={index < 10}
           sizes="(max-width: 560px) 100vw, 50vw"
@@ -28,7 +28,7 @@ export default function MasonryGrid() {
           alt={image.alt}
           className={styles.gridItem}
         />
-      ))}
+      ))} */}
     </Masonry>
   );
 }
