@@ -222,7 +222,7 @@ const about = {
       },
       {
         title: "Developer Tools",
-        description: <>Docker, AWS, MongoDB, Cypress, Git, GitHub, Mocha, Vite</>,
+        description: <>Docker, AWS, MongoDB, Cypress, Git, GitHub, Vite</>,
         icon: "clipboard",
         // optional: leave the array empty if you don't want to display images
         images: [],

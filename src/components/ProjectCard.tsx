@@ -8,6 +8,7 @@ import {
   Heading,
   SmartLink,
   Text,
+  Tag,
 } from "@/once-ui/components";
 
 interface ProjectCardProps {
@@ -19,6 +20,7 @@ interface ProjectCardProps {
   description: string;
   avatars: { src: string }[];
   link: string;
+  tags?: string[];
 }
 
 export const ProjectCard: React.FC<ProjectCardProps> = ({
@@ -29,6 +31,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
   description,
   avatars,
   link,
+  tags = [],
 }) => {
   return (
     <Column fillWidth gap="m">
@@ -54,13 +57,20 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
             </Heading>
           </Flex>
         )}
-        {(avatars?.length > 0 || description?.trim() || content?.trim()) && (
+        {(avatars?.length > 0 || description?.trim() || content?.trim() || tags?.length > 0) && (
           <Column flex={7} gap="16">
             {avatars?.length > 0 && <AvatarGroup avatars={avatars} size="m" reverse />}
             {description?.trim() && (
               <Text wrap="balance" variant="body-default-s" onBackground="neutral-weak">
                 {description}
               </Text>
+            )}
+            {tags?.length > 0 && (
+              <Flex gap="8" wrap>
+                {tags.map((tag, index) => (
+                  <Tag key={index} label={tag} variant="neutral" />
+                ))}
+              </Flex>
             )}
             <Flex gap="24" wrap>
               {content?.trim() && (
@@ -69,7 +79,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
                   style={{ margin: "0", width: "fit-content" }}
                   href={href}
                 >
-                  <Text variant="body-default-s">Read case study</Text>
+                  <Text variant="body-default-s">Link to website</Text>
                 </SmartLink>
               )}
               {link && (

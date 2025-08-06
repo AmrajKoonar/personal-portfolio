@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Heading, Flex, Text, Button, Avatar, RevealFx, Column, Badge, Row } from "@/once-ui/components";
+import { Heading, Flex, Text, Button, Avatar, RevealFx, Column, Badge, Row, Carousel } from "@/once-ui/components";
 import { Projects } from "@/components/work/Projects";
 
 import { baseURL, routes } from "@/app/resources";
@@ -19,6 +19,13 @@ export async function generateMetadata() {
 }
 
 export default function Home() {
+  const topProjectImages = [
+    "/images/projects/project-01/deep_phishing.JPG",
+    "/images/projects/project-01/Food_connect.JPG",
+    "/images/projects/project-01/sportoquiz.JPG",
+    "/images/projects/project-01/ThinkForge.JPG"
+  ];
+
   return (
     <Column maxWidth="m" gap="xl" horizontal="center">
       <Schema
@@ -78,7 +85,44 @@ export default function Home() {
         </Column>
       </Column>
       <RevealFx translateY="16" delay={0.6}>
-        <Projects range={[1, 1]} />
+        <Column fillWidth gap="m">
+          <Carousel
+            sizes="(max-width: 960px) 100vw, 960px"
+            images={topProjectImages.map((image) => ({
+              src: image,
+              alt: "Top Projects",
+            }))}
+          />
+          <Flex
+            mobileDirection="column"
+            fillWidth
+            paddingX="s"
+            paddingTop="12"
+            paddingBottom="24"
+            gap="l"
+          >
+            <Flex flex={5}>
+              <Heading as="h2" wrap="balance" variant="heading-strong-xl">
+                Top Projects
+              </Heading>
+            </Flex>
+            <Column flex={7} gap="16">
+              <Text wrap="balance" variant="body-default-s" onBackground="neutral-weak">
+                Click on the images above to view my top projects.
+              </Text>
+              <Flex gap="24" wrap>
+                <a
+                  href="https://github.com/AmrajKoonar"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ margin: "0", width: "fit-content", textDecoration: "none", color: "inherit" }}
+                >
+                  <Text variant="body-default-s">View Github</Text>
+                </a>
+              </Flex>
+            </Column>
+          </Flex>
+        </Column>
       </RevealFx>
       {routes["/blog"] && (
         <Flex fillWidth gap="24" mobileDirection="column">
@@ -92,7 +136,6 @@ export default function Home() {
           </Flex>
         </Flex>
       )}
-      <Projects range={[2]} />
       {newsletter.display && <Mailchimp newsletter={newsletter} />}
     </Column>
   );

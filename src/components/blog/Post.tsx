@@ -57,10 +57,17 @@ export default function Post({ post, thumbnail, direction }: PostProps) {
                     </Text>
                     { post.metadata.tag &&
                         <Tag
-                            className="mt-12"
+                            style={{ marginTop: "12px" }}
                             label={post.metadata.tag}
                             variant="neutral" />
                     }
+                    { post.metadata.tags && post.metadata.tags.length > 0 && (
+                        <Flex gap="8" wrap style={{ marginTop: "8px" }}>
+                            {post.metadata.tags.map((tag: string, index: number) => (
+                                <Tag key={index} label={tag} variant="neutral" />
+                            ))}
+                        </Flex>
+                    )}
                 </Column>
             </Flex>
         </SmartLink>
