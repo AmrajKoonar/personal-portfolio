@@ -1,5 +1,4 @@
-import { Flex } from "@/once-ui/components";
-import MasonryGrid from "@/components/gallery/MasonryGrid";
+import { Column, Heading, Text, Button, Flex } from "@/once-ui/components";
 import { baseURL } from "@/app/resources";
 import { gallery, person } from "@/app/resources/content";
 import { Meta, Schema } from "@/once-ui/modules";
@@ -14,9 +13,9 @@ export async function generateMetadata() {
   });
 }
 
-export default function Gallery() {
+export default function Contact() {
   return (
-    <Flex maxWidth="l">
+    <Column maxWidth="m" horizontal="center">
       <Schema
         as="webPage"
         baseURL={baseURL}
@@ -30,7 +29,62 @@ export default function Gallery() {
           image: `${baseURL}${person.avatar}`,
         }}
       />
-      <MasonryGrid />
-    </Flex>
+      <Column gap="xl" horizontal="center" paddingY="xl">
+        <Heading variant="display-strong-s" horizontal="center">
+          Get In Touch
+        </Heading>
+        <Text variant="body-default-l" horizontal="center" onBackground="neutral-weak">
+          I'm always open to new opportunities and collaborations. Feel free to reach out!
+        </Text>
+        
+        <Column gap="l" fillWidth maxWidth="s">
+          <Button
+            href={gallery.contact.linkedin}
+            variant="primary"
+            size="l"
+            prefixIcon="linkedin"
+            fillWidth
+          >
+            LinkedIn
+          </Button>
+          
+          <Button
+            href={`mailto:${gallery.contact.email}`}
+            variant="secondary"
+            size="l"
+            prefixIcon="email"
+            fillWidth
+          >
+            Email
+          </Button>
+          
+          <Button
+            href={gallery.contact.github}
+            variant="tertiary"
+            size="l"
+            prefixIcon="github"
+            fillWidth
+          >
+            GitHub
+          </Button>
+          
+          {gallery.contact.resume && (
+            <Button
+              href={gallery.contact.resume}
+              variant="tertiary"
+              size="l"
+              prefixIcon="document"
+              fillWidth
+            >
+              Resume
+            </Button>
+          )}
+        </Column>
+        
+        <Text variant="body-default-s" horizontal="center" onBackground="neutral-weak">
+          Based in Vancouver, BC
+        </Text>
+      </Column>
+    </Column>
   );
 }

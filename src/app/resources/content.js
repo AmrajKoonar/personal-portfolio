@@ -14,12 +14,11 @@ const person = {
 };
 
 const newsletter = {
-  display: true,
-  title: <>Subscribe to {person.firstName}'s Newsletter</>,
+  display: false, // Disabled for academic portfolio
+  title: <>Subscribe to {person.firstName}'s Academic Updates</>,
   description: (
     <>
-      I occasionally write about design, technology, and share thoughts on the intersection of
-      creativity and engineering.
+      I occasionally share updates about my academic projects, research, and learning journey.
     </>
   ),
 };
@@ -58,8 +57,8 @@ const home = {
   headline: <>Hi, I'm Amraj Koonar.</>,
   featured: {
     display: true,
-    title: <>Recent project: <strong className="ml-4">Once UI</strong></>,
-    href: "/work/building-once-ui-a-customizable-design-system",
+    title: <>Recent project: <strong className="ml-4">DeepPhishing</strong></>,
+    href: "/work/deepphishing",
   },
   subline: (
     <> 
@@ -175,39 +174,28 @@ const about = {
   },
   technical: {
     display: true, // set to false to hide this section
-    title: "Technical skills",
+    title: "Technical Skills",
     skills: [
       {
-        title: "Figma",
-        description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
+        title: "Languages",
+        description: <>JavaScript, TypeScript, HTML/CSS, Java, Python, C, C++, SQL (PostgreSQL), GraphQL</>,
+        icon: "document",
         // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        images: [],
       },
       {
-        title: "Next.js",
-        description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
+        title: "Frameworks",
+        description: <>React.js, Next.js, Node.js, ExpressJs, Socket.io, Spring Boot, Vue.js, Tailwind CSS</>,
+        icon: "grid",
         // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        images: [],
+      },
+      {
+        title: "Developer Tools",
+        description: <>Docker, AWS, MongoDB, Cypress, Git, GitHub, Mocha, Vite</>,
+        icon: "clipboard",
+        // optional: leave the array empty if you don't want to display images
+        images: [],
       },
     ],
   },
@@ -215,71 +203,34 @@ const about = {
 
 const blog = {
   path: "/blog",
-  label: "Blog",
-  title: "Writing about design and tech...",
-  description: `Read what ${person.name} has been up to recently`,
+  label: "Relevant Academic Work",
+  title: "Relevant Academic Work",
+  description: `Academic coursework and projects by ${person.name}`,
   // Create new blog posts by adding a new .mdx file to app/blog/posts
   // All posts will be listed on the /blog route
 };
 
 const work = {
   path: "/work",
-  label: "Work",
+  label: "Projects",
   title: `Projects – ${person.name}`,
-  description: `Design and dev projects by ${person.name}`,
+  description: `Personal and academic projects by ${person.name}`,
   // Create new project pages by adding a new .mdx file to app/blog/posts
   // All projects will be listed on the /home and /work routes
 };
 
 const gallery = {
   path: "/gallery",
-  label: "Gallery",
-  title: `Photo gallery – ${person.name}`,
-  description: `A photo collection by ${person.name}`,
-  // Images by https://lorant.one
-  // These are placeholder images, replace with your own
-  images: [
-    {
-      src: "/images/gallery/horizontal-1.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/horizontal-2.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/horizontal-3.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/horizontal-4.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/vertical-1.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/vertical-2.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/vertical-3.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/vertical-4.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-  ],
+  label: "Contact",
+  title: `Contact – ${person.name}`,
+  description: `Get in touch with ${person.name}`,
+  // Contact information
+  contact: {
+    email: person.email,
+    linkedin: "https://www.linkedin.com/in/amraj-koonar/",
+    github: "https://github.com/AmrajKoonar",
+    resume: "", // Placeholder for resume link
+  },
 };
 
 export { person, social, newsletter, home, about, blog, work, gallery };
