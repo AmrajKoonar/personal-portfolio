@@ -26,8 +26,9 @@ export const Footer = () => {
           <Text onBackground="neutral-weak">© {currentYear} /</Text>
           <Text paddingX="4">{person.name}</Text>
           <Text onBackground="neutral-weak">
-            {/* Usage of this template requires attribution. Please don't remove the link to Once UI. */}
-            / Build your portfolio with{" "}
+            {/* Usage of this template requires attribution. Please don't remove the link to Once UI. Link is still shown below with only extra text removed.*/}
+            {/* / Build your portfolio with{" "} */}
+            /
             <SmartLink
               href="https://once-ui.com/templates/magic-portfolio"
             >
