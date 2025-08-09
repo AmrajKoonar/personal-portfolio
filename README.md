@@ -1,12 +1,10 @@
-# 🖥️ Personal Portfolio – Amraj Koonar
+# 🖥️ Personal Portfolio (V2) – Amraj Koonar
 
 A fully responsive personal website built to showcase projects, technical coursework, resume, and contact information. Designed with Once UI from Magic Portfolio and customized to have animated transitions for a clean and professional look.
 
 Live link here → [Amraj Koonar](https://amraj-koonar.vercel.app/)
 
 _Last updated Aug 2025._
-
-Officially deployed Version 2. 
 
 Version 3 coming soon
 
@@ -16,10 +14,9 @@ Version 3 coming soon
 
 - 🏠 **Homepage**: Animated landing page with name, role, top projects, and recent academic courses.
 - 👤 **About Me Page**: Brief overview of background, experience, and technical skills (Languages, Frameworks, Developer Tools).
-- 🧩 **Projects Page**: Highlights featured work with descriptions and links.
-- 📘 **Relevant Coursework**: Section listing major technical courses taken.
-- 📄 **Resume Page**: Downloadable resume in PDF format.
-- ✉️ **Contact Page**: Simple form to reach out directly.
+- 🧩 **Projects Page**: Highlights featured projects with descriptions, links, and images.
+- 📘 **Coursework Page**: Section listing major technical courses taken with descriptions and links.
+- ✉️ **Contact Page**: Simple form to reach out directly. Provides email, LinkedIn, GitHub, and a Resume.
 - 🧭 **Navbar + Footer**: Persistent and responsive site-wide navigation.
 - 💫 **Smooth Animations**: Framer Motion used for subtle, modern UI transitions.
 - 🔀 **Page Navigation**: React Scroll enables seamless jumps across sections.
