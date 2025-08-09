@@ -25,11 +25,11 @@ Version 3 coming soon
 
 ## 🛠️ Tech Stack
 
-- **Framework**: React
-- **Language**: JavaScript
-- **Styling**: CSS Modules
-- **Animations**: Framer Motion, React Scroll
-- **Deployment**: GitHub Pages
+- **Framework**: Next.js
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **Animations**: Once UI
+- **Deployment**: Vercel
 
 ---
 
@@ -39,8 +39,8 @@ To run this project locally:
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/amrajkoonar/amrajkoonar.github.io.git
-cd amrajkoonar.github.io
+git clone https://github.com/amrajkoonar/personal-portfolio
+cd personal-portfolio
 ```
 
 ### 2. Install Dependencies
