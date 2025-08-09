@@ -4,14 +4,14 @@ A fully responsive personal website built to showcase projects, technical course
 
 Live link here → [Amraj Koonar](https://amraj-koonar.vercel.app/)
 
-_Last updated Feb 2025._
+_Last updated Aug 2025. Officially deployed Version 2. Version 3 coming soon_
 
 ---
 
 ## 🎯 Features
 
-- 🏠 **Homepage**: Animated landing page with name, role, and CTA.
-- 👤 **About Me Page**: Brief overview of background, goals, and personal interests.
+- 🏠 **Homepage**: Animated landing page with name, role, top projects, and recent academic courses.
+- 👤 **About Me Page**: Brief overview of background, experience, goals, and technical skills.
 - 🧩 **Projects Page**: Highlights featured work with descriptions and links.
 - 📘 **Relevant Coursework**: Section listing major technical courses taken.
 - 📄 **Resume Page**: Downloadable resume in PDF format.
