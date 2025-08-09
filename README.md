@@ -66,5 +66,5 @@ http://localhost:3000
 
 ## 📄 License
 
-This project is open-source and available under the [MIT License](LICENSE).
+This project is open-source and available under the [MIT License](LICENSE). Credit: [Once UI](https://once-ui.com/products/magic-portfolio)
 
