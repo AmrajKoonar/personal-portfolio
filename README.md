@@ -4,7 +4,7 @@ A fully responsive personal website built to showcase projects, technical course
 
 Live link here → [Amraj Koonar](https://amraj-koonar.vercel.app/)
 
-_Last updated Aug 2025.__
+_Last updated Aug 2025._
 
 Officially deployed Version 2. 
 
