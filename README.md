@@ -17,9 +17,8 @@ Version 3 coming soon
 - 🧩 **Projects Page**: Highlights featured projects with descriptions, links, and images.
 - 📘 **Coursework Page**: Section listing major technical courses taken with descriptions and links.
 - ✉️ **Contact Page**: Simple form to reach out directly. Provides email, LinkedIn, GitHub, and a Resume.
-- 🧭 **Navbar + Footer**: Persistent and responsive site-wide navigation.
-- 💫 **Smooth Animations**: Framer Motion used for subtle, modern UI transitions.
-- 🔀 **Page Navigation**: React Scroll enables seamless jumps across sections.
+- 🧭 **Navbar + Footer**: Persistent and responsive site-wide navigation with a simple footer.
+- 💫 **Smooth Animations**: Once UI, modern UI transitions.
 - 📱 **Mobile Responsive**: Built with mobile-first principles using Tailwind and CSS modules.
 
 ---
