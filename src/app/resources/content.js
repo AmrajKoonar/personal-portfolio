@@ -215,14 +215,14 @@ const about = {
       },
       {
         title: "Frameworks",
-        description: <>React.js, Next.js, Node.js, ExpressJs, Socket.io, Spring Boot, Vue.js, Tailwind CSS</>,
+        description: <>React.js, Next.js, Node.js, ExpressJs, Socket.io, Spring Boot, Tailwind CSS</>,
         icon: "grid",
         // optional: leave the array empty if you don't want to display images
         images: [],
       },
       {
         title: "Developer Tools",
-        description: <>Docker, AWS, MongoDB, Cypress, Git, GitHub, Vite</>,
+        description: <>Docker, AWS, Git, GitHub, Vite, Linux, Shell Scripting, GCC/GDB, Makefile, Valgrind, Vim</>,
         icon: "clipboard",
         // optional: leave the array empty if you don't want to display images
         images: [],
