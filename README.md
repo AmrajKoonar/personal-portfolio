@@ -2,7 +2,7 @@
 
 A fully responsive personal website built to showcase projects, technical coursework, resume, and contact information. Designed with Once UI from Magic Portfolio and customized to have animated transitions for a clean and professional look.
 
-Live link here → [amrajkoonar.github.io](https://amrajkoonar.github.io/)
+Live link here → [Amraj Koonar](https://amraj-koonar.vercel.app/)
 
 _Last updated Feb 2025._
 
