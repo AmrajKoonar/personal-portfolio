@@ -20,9 +20,9 @@ export async function generateMetadata() {
 
 export default function Home() {
   const topProjectImages = [
-    "/images/projects/project-01/deep_phishing.JPG",
     "/images/projects/project-01/Food_connect.JPG",
     "/images/projects/project-01/sportoquiz.JPG",
+    "/images/projects/project-01/deep_phishing.JPG",
     "/images/projects/project-01/ThinkForge.JPG"
   ];
 
