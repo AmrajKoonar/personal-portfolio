@@ -15,7 +15,7 @@ Version 3 coming soon
 ## 🎯 Features
 
 - 🏠 **Homepage**: Animated landing page with name, role, top projects, and recent academic courses.
-- 👤 **About Me Page**: Brief overview of background, experience, goals, and technical skills.
+- 👤 **About Me Page**: Brief overview of background, experience, and technical skills (Languages, Frameworks, Developer Tools).
 - 🧩 **Projects Page**: Highlights featured work with descriptions and links.
 - 📘 **Relevant Coursework**: Section listing major technical courses taken.
 - 📄 **Resume Page**: Downloadable resume in PDF format.
