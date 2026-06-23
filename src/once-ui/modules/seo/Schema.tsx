@@ -44,7 +44,7 @@ export function Schema({
 
   const imageUrl = image
     ? `${normalizedBaseURL}${image.startsWith("/") ? image : `/${image}`}`
-    : `${normalizedBaseURL}/og?title=${encodeURIComponent(title)}`;
+    : `${normalizedBaseURL}/opengraph-image.png`;
 
   const url = `${normalizedBaseURL}${normalizedPath}`;
 

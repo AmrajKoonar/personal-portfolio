@@ -11,18 +11,23 @@ import { opacity, SpacingToken } from "@/once-ui/types";
 import { Meta } from "@/once-ui/modules";
 
 export async function generateMetadata() {
-  return Meta.generate({
+  const metadata = Meta.generate({
     title: home.title,
     description: home.description,
     baseURL: baseURL,
     path: home.path,
     image: home.image,
     icons: {
-      icon: '/images/favicon.png',
-      shortcut: '/images/favicon.png',
-      apple: '/images/favicon.png',
+      icon: "/images/favicon.png",
+      shortcut: "/images/favicon.png",
+      apple: "/images/favicon.png",
     },
   });
+
+  return {
+    ...metadata,
+    metadataBase: new URL(baseURL),
+  };
 }
 
 interface RootLayoutProps {

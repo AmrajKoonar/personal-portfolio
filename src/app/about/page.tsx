@@ -22,7 +22,7 @@ export async function generateMetadata() {
     title: about.title,
     description: about.description,
     baseURL: baseURL,
-    image: `${baseURL}/og?title=${encodeURIComponent(about.title)}`,
+    image: `${baseURL}/opengraph-image.png`,
     path: about.path,
   });
 }
@@ -58,7 +58,7 @@ export default function About() {
         title={about.title}
         description={about.description}
         path={about.path}
-        image={`${baseURL}/og?title=${encodeURIComponent(about.title)}`}
+        image={`${baseURL}/opengraph-image.png`}
         author={{
           name: person.name,
           url: `${baseURL}${about.path}`,

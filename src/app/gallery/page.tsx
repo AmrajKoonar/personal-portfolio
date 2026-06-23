@@ -8,7 +8,7 @@ export async function generateMetadata() {
     title: gallery.title,
     description: gallery.description,
     baseURL: baseURL,
-    image: `${baseURL}/og?title=${encodeURIComponent(gallery.title)}`,
+    image: `${baseURL}/opengraph-image.png`,
     path: gallery.path,
   });
 }
@@ -22,7 +22,7 @@ export default function Contact() {
         title={gallery.title}
         description={gallery.description}
         path={gallery.path}
-        image={`${baseURL}/og?title=${encodeURIComponent(gallery.title)}`}
+        image={`${baseURL}/opengraph-image.png`}
         author={{
           name: person.name,
           url: `${baseURL}${gallery.path}`,
