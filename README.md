@@ -1,4 +1,4 @@
-# 🖥️ Personal Portfolio (V2) – Amraj Koonar
+# 🖥️ Personal Portfolio (V3) – Amraj Koonar
 
 A fully responsive personal website built to showcase projects, technical coursework, resume, and contact information. Designed with Once UI from Magic Portfolio and customized to have animated transitions for a clean and professional look.
 
@@ -6,7 +6,7 @@ Live link here → [Amraj Koonar](https://amraj-koonar.vercel.app/)
 
 _Last updated Aug 2025._
 
-Version 3 coming soon
+Version 4 coming soon
 
 ---
 
