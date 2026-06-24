@@ -107,9 +107,9 @@ const about = {
     title: "Experience",
     experiences: [
         {
-        company: "BC Pension Corporation",
+        company: "Application Developer (Co-op)",
         timeframe: "May. 2026 - Present",
-        role: "Application Developer",
+        role: "BC Pension Corporation",
         achievements: [
           <>
             Built and maintained Power Platform automation for a Github deployment approval app.

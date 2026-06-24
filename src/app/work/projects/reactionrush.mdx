@@ -1,0 +1,62 @@
+---
+title: "Reaction Rush"
+publishedAt: "2026-04-05"
+summary: "A multiplayer reaction game built with Python sockets using a TCP client-server architecture and newline-delimited JSON protocol."
+images:
+  - "/images/projects/project-01/reaction_rush.JPG"
+team:
+  - name: "Amraj Koonar"
+    role: "Backend Developer"
+    avatar: "/images/pfp/pfp_amraj(2).jpg"
+    linkedIn: "https://www.linkedin.com/in/amraj-koonar/"
+  - name: "Geonwoo Park"
+    role: "Backend Developer"
+    avatar: "/images/pfp/pfp_amraj(2).jpg"
+    linkedIn: ""
+link: "https://github.com/AmrajKoonar/CMPT371_A3_Reaction_Rush"
+tags: ["Python", "Socket Programming", "TCP", "Networking", "Tkinter", "JSON"]
+---
+
+## Overview
+
+Built a multiplayer reaction game using Python's Socket API with TCP. The project uses a client-server architecture where one server manages the game session and multiple clients connect to the same lobby.
+
+**Video demo:** [Reaction Rush](https://www.youtube.com/watch?v=2MjNeODf68w)
+
+## Key Features
+
+- **TCP Client-Server Architecture**: Built a networked multiplayer game where clients communicate with a central game server
+- **Multiplayer Lobby System**: Created a lobby where players can join with an access code, enter a player name, and mark themselves as ready
+- **Reaction-Based Gameplay**: Implemented a 5-round reaction game where players wait for the screen to turn green before clicking
+- **False Start Detection**: Added early-click detection and penalties for players who click before the round begins
+- **Score Calculation**: Developed server-side scoring logic based on reaction time, penalties, and round results
+- **Leaderboard Updates**: Sent live leaderboard updates to all connected players after each round
+- **Newline-Delimited JSON Protocol**: Designed a simple application-layer protocol for reliable message exchange over TCP
+- **Tkinter GUI Client**: Built a desktop client interface for connecting to the server and playing the game
+
+## Technologies Used
+
+- **Python**: For implementing the client, server, game logic, and networking protocol
+- **Socket API**: For TCP communication between clients and the server
+- **TCP**: For reliable client-server data transmission
+- **JSON**: For structured message exchange between the server and clients
+- **Tkinter**: For building the graphical client interface
+- **Threading**: For handling multiple clients and concurrent game communication
+- **Custom Protocol**: For lobby updates, ready messages, round events, click messages, scores, and game over messages
+
+## Development Process
+
+The project involved designing and implementing a multiplayer networking application from the ground up. The development process included:
+
+- Designing a client-server architecture for a real-time multiplayer reaction game
+- Implementing TCP socket communication between multiple clients and a central server
+- Creating a custom newline-delimited JSON protocol to separate and process complete TCP messages
+- Building lobby logic for player joins, access code validation, ready states, and game start conditions
+- Developing server-side round timing, false start checks, score calculation, and winner selection
+- Creating a Tkinter-based client interface for joining games and responding during gameplay
+- Handling important networking edge cases such as disconnects, server shutdowns, and invalid join attempts
+- Testing the game locally with multiple clients connected to the same server session
+
+## Outcome
+
+Reaction Rush successfully demonstrates a multiplayer TCP socket programming application with structured client-server communication, real-time gameplay, and reliable message handling. The project strengthened practical understanding of networking concepts, custom application-layer protocols, concurrency, GUI development, and the challenges of building interactive networked applications.
