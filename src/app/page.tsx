@@ -23,7 +23,7 @@ export default function Home() {
     "/images/projects/project-01/Food_connect.JPG",
     "/images/projects/project-01/sportoquiz.JPG",
     "/images/projects/project-01/deep_phishing.JPG",
-    "/images/projects/project-01/sfu_market.JPG"
+    "/images/projects/project-01/sfu_market_place.JPG"
   ];
 
   return (

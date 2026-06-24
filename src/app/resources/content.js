@@ -106,6 +106,32 @@ const about = {
     display: true, // set to false to hide this section
     title: "Experience",
     experiences: [
+        {
+        company: "BC Pension Corporation",
+        timeframe: "May. 2026 - Present",
+        role: "Application Developer",
+        achievements: [
+          <>
+            Built and maintained Power Platform automation for a Github deployment approval app.
+          </>,
+          <>
+            Developed in Power Automate REST endpoints, SharePoint data lookups, PAC CLI solution exports, and GitHub 
+            pull request workflows.
+          </>,
+          <>
+            In progress
+          </>,
+        ],
+        images: [
+          // optional: leave the array empty if you don't want to display images
+          // {
+          //   src: "/images/projects/project-01/cover-01.jpg",
+          //   alt: "Once UI Project",
+          //   width: 16,
+          //   height: 9,
+          // },
+        ],
+      },
       {
         company: "Web Developer",
         timeframe: "July. 2025 - Present",
