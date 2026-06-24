@@ -1,0 +1,59 @@
+---
+title: "TailBlazer"
+publishedAt: "2026-04-09"
+summary: "A client-side lost animal reporting web application built with React, TypeScript, maps, image uploads, and third-party APIs."
+images:
+  - "/images/projects/project-01/tailblazer.JPG"
+team:
+  - name: "Amraj Koonar"
+    role: "Frontend Developer"
+    avatar: "/images/pfp/pfp_amraj(2).jpg"
+    linkedIn: "https://www.linkedin.com/in/amraj-koonar/"
+link: "https://github.com/AmrajKoonar/tailblazer"
+tags: ["React", "TypeScript", "Vite", "Leaflet", "JSONBin", "ImgBB", "OpenStreetMap"]
+---
+
+## Overview
+
+Built a fully client-side lost animal reporting web application where users can submit lost animal reports with photos, map locations, contact information, and status updates.
+
+## Key Features
+
+- **Lost Animal Reports**: Created a form for users to submit animal name, type, photo, description, contact information, and last seen location
+- **Photo Upload**: Integrated ImgBB to upload animal photos and store hosted image URLs with each report
+- **Map-Based Location Selection**: Used Leaflet to let users click on a map and select the last seen location for the animal
+- **Reverse Geocoding**: Integrated Nominatim and OpenStreetMap to convert selected coordinates into readable addresses
+- **Persistent Report Storage**: Used JSONBin to store reports as a shared JSON array across users
+- **Interactive Map View**: Displayed all lost animal reports as pins on a Leaflet map with clickable popups
+- **Browse and Filter System**: Built a report grid with filters for animal type and lost or found status
+- **Report Detail Page**: Created detailed report pages showing photos, descriptions, contact information, coordinates, date, and status
+- **Mark as Found**: Added password-protected status updates so owners can mark their animal as found
+
+## Technologies Used
+
+- **React**: For building interactive and reusable user interface components
+- **TypeScript**: For type-safe client-side development and improved code reliability
+- **Vite**: For fast development tooling and production builds
+- **React Router**: For client-side routing between pages
+- **Leaflet**: For interactive maps and location selection
+- **React Leaflet**: For integrating Leaflet maps into React components
+- **JSONBin**: For persistent report storage using a shared JSON data source
+- **ImgBB**: For image hosting and photo upload functionality
+- **Nominatim / OpenStreetMap**: For reverse geocoding selected map coordinates
+
+## Development Process
+
+The project focused on creating a practical lost animal reporting system with a fully client-side architecture. The development process included:
+
+- Designing a user flow for submitting, browsing, filtering, and resolving lost animal reports
+- Building reusable React and TypeScript components for forms, cards, maps, and report details
+- Creating TypeScript interfaces to structure report data and improve code reliability
+- Integrating Leaflet maps for selecting and displaying lost animal locations
+- Connecting third-party APIs for image hosting, persistent storage, and reverse geocoding
+- Implementing client-side routing for home, submit, browse, and detail pages
+- Adding password-based report resolution so owners could mark animals as found
+- Testing edge cases such as missing fields, API limits, map interaction issues, and report status changes
+
+## Outcome
+
+TailBlazer successfully provides a client-side platform for reporting and tracking lost animals through photos, map locations, filtering, and persistent shared storage. The project demonstrates experience with React, TypeScript, third-party API integration, interactive maps, client-side routing, responsive UI design, and practical user-focused web application development.
