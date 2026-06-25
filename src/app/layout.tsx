@@ -1,5 +1,6 @@
 import "@/once-ui/styles/index.scss";
 import "@/once-ui/tokens/index.scss";
+import "./tailwind.css";
 
 import classNames from "classnames";
 
@@ -9,6 +10,10 @@ import { baseURL, effects, style, font, home } from "@/app/resources";
 import { Background, Column, Flex, ThemeProvider, ToastProvider } from "@/once-ui/components";
 import { opacity, SpacingToken } from "@/once-ui/types";
 import { Meta } from "@/once-ui/modules";
+import { Geist } from "next/font/google";
+
+const geist = Geist({subsets:['latin'],variable:'--font-sans'});
+
 
 export async function generateMetadata() {
   const metadata = Meta.generate({

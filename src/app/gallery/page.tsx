@@ -2,6 +2,7 @@ import { Column, Heading, Text, Button, Flex } from "@/once-ui/components";
 import { baseURL } from "@/app/resources";
 import { gallery, person } from "@/app/resources/content";
 import { Meta, Schema } from "@/once-ui/modules";
+// import { ContactTextReveal } from "@/components/ContactTextReveal";
 
 export async function generateMetadata() {
   return Meta.generate({
@@ -29,7 +30,7 @@ export default function Contact() {
           image: `${baseURL}${person.avatar}`,
         }}
       />
-
+      {/* <ContactTextReveal /> */}
       <Column gap="xl" horizontal="center" paddingY="xl">
         <Heading variant="display-strong-s" className="text-center">
           Get In Touch
